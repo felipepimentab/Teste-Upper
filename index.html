@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <div class="cabecalho__logo"></div>
+    </header>
+    <main class="principal">
+        <section class="acessar">
+            <h1 class="acessar__titulo">Acessar</h1>
+            <form class="login">
+                <div class="login__email">
+                    <label for="email">E-mail</label>
+                    <input class="login__input" type="email" id="email">
+                </div>
+                <div class="login__senha">
+                    <label for="password">Senha</label>
+                    <input class="login__input" type="password" id="senha">
+                </div>
+                <p class="msg-desativado" data-erro>Algo deu errado. Verifique se o E-mail e a Senha estão corretos e tente novamente.</p>
+                <p class="msg-desativado" data-loading>Aguarde um momento...</p>
+                 <input class="login__botao" type="submit" value="ENTRAR">
+            </form>
+        </section>
+
+    </main>
+    <script src="./service/main.js"></script>
+</body>
+</html>

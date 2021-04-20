@@ -1,0 +1,265 @@
+.corpo {
+  background: #EFF0F3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100vw;
+}
+
+.cabecalho {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #174DBA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.cabecalho .cabecalho__logo {
+  background: url("../assets/logo-uppersoft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60%;
+  width: 150px;
+}
+
+.principal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 130vh;
+  margin: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.acessar {
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 15rem;
+  padding: 1.5rem 3rem;
+  width: 300px;
+}
+
+.acessar .acessar__titulo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #174DBA;
+  text-align: center;
+}
+
+.login {
+  width: 100%;
+}
+
+.login .login__email, .login .login__senha {
+  color: #174DBA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.login .login__input {
+  border-color: #174DBA;
+  border-style: solid;
+  border-radius: 5px;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding: none;
+  width: calc(100% - 8px);
+}
+
+.login .login__botao {
+  background: #174DBA;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.principal-usuarios {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 130vh;
+  margin: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.adm-usuarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5rem;
+  width: 80vw;
+}
+
+.adm-usuarios .adm-usuarios__titulo {
+  color: #174DBA;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 2rem;
+}
+
+.adm-usuarios__pag {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #505050;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+}
+
+.usuarios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: 33.33% 33.33% 33.33%;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+  height: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+.usuarios .usuarios__card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+}
+
+.usuarios .usuarios__card .botao-edit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: url("../assets/icon-edit.svg");
+  background-size: 25px 25px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem;
+  width: 25px;
+}
+
+.usuarios .usuarios__card .foto-de-perfil {
+  border: solid;
+  border-color: #FFFFFF;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.usuarios .usuarios__card .usuario-nome {
+  color: #174DBA;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.usuarios .usuarios__card .usuario-email {
+  color: #505050;
+  margin-bottom: 4rem;
+}
+
+.msg-desativado {
+  color: #505050;
+  display: none;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.msg-ativo {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1124px) {
+  .usuarios {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .usuarios {
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .acessar {
+    border-radius: 0px;
+    display: block;
+    margin-top: 10rem;
+    width: 80vw;
+  }
+  .adm-usuarios {
+    width: 100vw;
+  }
+  .adm-usuarios .adm-usuarios__titulo {
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

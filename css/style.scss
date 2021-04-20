@@ -1,0 +1,208 @@
+$primaria: #174DBA;
+$cinza: #EFF0F3;
+$branco: #FFFFFF;
+$escuro: #505050;
+
+.corpo {
+    background: $cinza;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 100vw;
+}
+
+.cabecalho {
+    align-items: center;
+    background: $primaria;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    .cabecalho__logo {
+        background: url('../assets/logo-uppersoft.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60%;
+        width: 150px;
+    }
+}
+
+.principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    margin: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.acessar {
+    background: $branco;
+    border-radius: 10px;
+    margin-top: 15rem;
+    padding: 1.5rem 3rem;
+    width: 300px;
+    .acessar__titulo {
+        font-size: 32px;
+        font-weight: bold;
+        color: $primaria;
+        text-align: center;
+    }
+}
+
+.login {
+    width: 100%;
+    .login__email, .login__senha {
+        color: $primaria;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        width: 100%;
+    }
+    .login__input {
+        border-color: $primaria;
+        border-style: solid;
+        border-radius: 5px;
+        height: 2rem;
+        margin-top: 0.5rem;
+        padding: none;
+        width: calc(100% - 8px);
+    }
+    .login__botao {
+        background: $primaria;
+        border: none;
+        border-radius: 5px;
+        color: $branco;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+//========ADMINISTRAR USUÁRIOS==============
+.principal-usuarios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    margin: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.adm-usuarios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 80vw;
+    .adm-usuarios__titulo {
+        color: $primaria;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+.adm-usuarios__pag {
+    align-self: flex-end;
+    color: $escuro;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+}
+
+.usuarios {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: auto;
+    margin-top: 0;
+    width: 100%;
+    .usuarios__card {
+        align-items: center;
+        background: $branco;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        .botao-edit {
+            align-items: center;
+            align-self: flex-end;
+            background: url('../assets/icon-edit.svg');
+            background-size: 25px 25px;
+            border: none;
+            display: flex;
+            height: 25px;
+            justify-content: center;
+            margin: 0.5rem;
+            width: 25px;
+        }
+        .foto-de-perfil {
+            border: solid;
+            border-color: $branco;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .usuario-nome {
+            color: $primaria;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 1.5rem 0;   
+        }
+        .usuario-email {
+            color: $escuro;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.msg-desativado {
+    color: $escuro;
+    display: none;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.msg-ativo {
+    display: inline-block;
+}
+
+
+//========RESPONSIVIDADE===================
+
+@media screen and (max-width: 1124px) {
+    .usuarios {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .usuarios {
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .acessar {
+        border-radius: 0px;
+        display: block;
+        margin-top: 10rem;
+        width: 80vw;
+    }
+    .adm-usuarios {
+        width: 100vw;
+        .adm-usuarios__titulo {
+            margin-right: 2rem;
+        }
+    }
+}
